@@ -1,16 +1,23 @@
-# ff
+# Tic-Tac-Toe Game with Ember.js, XState, and Tailwind CSS
+![Alt text](./public/scr.png "a title")
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Introduction
 
-## Prerequisites
+This project implements the classic game of Tic-Tac-Toe using Ember.js, XState, and Tailwind CSS. The purpose of this project is to demonstrate my front-end development skills, including state management with XState, component-driven architecture with Ember.js, and styling with Tailwind CSS.
 
-You will need the following things properly installed on your computer.
+## Project Overview
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) (with npm)
-- [Ember CLI](https://cli.emberjs.com/release/)
-- [Google Chrome](https://google.com/chrome/)
+### Technologies Used
+- **Ember.js**: A robust framework for building ambitious web applications.
+- **XState**: A state management library using state machines and statecharts.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
+### State Management with XState
+We used XState to manage the game state, ensuring a clear and predictable flow of the game. The state machine handles the following states:
+
+- playing: The state during the game.
+- finished: The state when a player wins.
+- draw: The state when the game ends in a draw.
 
 ## Installation
 
@@ -22,7 +29,6 @@ You will need the following things properly installed on your computer.
 
 - `npm run start`
 - Visit your app at [http://localhost:4200](http://localhost:4200).
-- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 ### Code Generators
 
@@ -43,14 +49,3 @@ Make use of the many generators for code, try `ember help generate` for more det
 - `npm exec ember build` (development)
 - `npm run build` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-- [ember.js](https://emberjs.com/)
-- [ember-cli](https://cli.emberjs.com/release/)
-- Development Browser Extensions
-  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)

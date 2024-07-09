@@ -1,0 +1,10 @@
+{{!-- app/templates/components/square.hbs --}}
+<button 
+  class="inline-flex relative leading-tight transition-all duration-200 outline-none appearance-none touch-manipulation font-semibold aspect-square p-4 {{this.selectedClasses}}" 
+  type="button"
+  {{on "click" this.handleClick}}
+>
+  <span class="absolute top-1/2 left-1/2 transform-gpu -translate-x-1/2 -translate-y-1/2">
+    <PlayerIcon @player="{{@player}}" class="w-8 h-8 lg:w-12 lg:h-12" />
+  </span>
+</button>

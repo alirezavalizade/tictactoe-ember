@@ -1,0 +1,17 @@
+<div class="flex flex-col items-center justify-center space-y-4">
+  <div class="rounded-3xl p-4 border border-pink-600 space-y-4 w-full shadow-xl bg-white aspect-square flex items-center justify-center">
+    <h3 class="px-4 py-2 flex items-center justify-center">
+      <PlayerIcon @player="{{@player}}" class="w-8 h-8 lg:w-10 lg:h-10" />
+    </h3>
+  </div>
+  <div class="rounded-3xl p-4 border-yellow-500 text-yellow-500 color-yellow-500 font-bold border-4 flex items-center justify-center">
+    <h3>
+      Win Rounds: 
+      {{#if (eq @player 'X')}}
+        {{this.tictacService.context.xWins}}
+      {{else}}
+        {{this.tictacService.context.oWins}}
+      {{/if}}
+    </h3>
+  </div>
+</div>
