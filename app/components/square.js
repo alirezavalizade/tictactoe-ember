@@ -14,19 +14,21 @@ export default class SquareComponent extends Component {
   }
 
   get selectedClasses() {
-    if (
-      this.isFinished &&
-      this.tictacService.context.winningLine.includes(this.index)
-    ) {
-      return 'bg-green-500 shadow-2xl shadow-green-500';
-    }
+    if (this.player) {
+      if (
+        this.isFinished &&
+        this.tictacService.context.winningLine.includes(this.index)
+      ) {
+        return 'bg-green-500 shadow-2xl shadow-green-500';
+      }
 
-    if (this.player === 'X') {
-      return 'bg-red-500 text-white shadow-lg';
-    }
+      if (this.player === 'X') {
+        return 'bg-red-500 text-white shadow-lg';
+      }
 
-    if (this.player === 'O') {
-      return 'bg-yellow-500 text-white shadow-lg';
+      if (this.player === 'O') {
+        return 'bg-yellow-500 text-white shadow-lg';
+      }
     }
 
     return 'bg-white hover:bg-white/90';
